@@ -48,4 +48,13 @@
   width: 50px;
   height: 50px;
   margin-bottom: 0.6rem;
+
+}
+/* 🔧 Forcer l’affichage de la section Compétences */
+#competences, .competences, .skills, #skills {
+  display: block !important;
+  visibility: visible !important;
+  height: auto !important;
+  opacity: 1 !important;
+  position: relative !important;
 }
