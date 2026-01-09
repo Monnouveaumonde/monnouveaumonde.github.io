@@ -478,4 +478,66 @@ img, video { max-width: 100%; height: auto; }
 /* ✅ Evite le scroll horizontal */
 html, body { overflow-x: hidden; }
 
+/* ===========================
+   ✅ FIX RESPONSIVE MOBILE
+   (index / layout sidebar)
+=========================== */
+@media (max-width: 768px) {
+  /* 1) Le contenu doit reprendre toute la largeur */
+  .main-content {
+    margin-left: 0 !important;
+    width: 100% !important;
+    padding-bottom: 90px; /* espace pour la navbar en bas */
+  }
+
+  /* 2) Sections moins “massives” sur mobile */
+  .section {
+    min-height: auto;
+    padding: 3rem 1.2rem;
+  }
+
+  /* 3) Hero centré et compact */
+  .hero-section .content {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .typing-text { font-size: 1.7rem; }
+  .subtitle { font-size: 1rem; }
+
+  .floating-image {
+    width: min(180px, 55vw);
+    height: auto;
+  }
+
+  /* 4) Boutons en colonne (sinon ça déborde) */
+  .hero-section .btn,
+  .hero-section .btn-outline {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    margin: 10px auto;
+  }
+
+  /* 5) La nav du bas doit wrap si manque de place */
+  .sidebar.nav-vertical .sidebar-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    transform: none; /* tu avais translateY(40px) sur desktop */
+    margin-top: 0;
+  }
+
+  .sidebar.nav-vertical .nav-link {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    padding: 6px 8px;
+  }
+}
+
+
+
 
