@@ -562,27 +562,6 @@ html, body { overflow-x: hidden; }
     box-shadow: 0 0 20px rgba(0, 200, 255, 0.12);
 }
 
-/* BOUTON FLOTTANT */
-.projects-main-btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 14px 34px;
-    background: rgba(5, 10, 25, 0.85);
-    color: var(--neon);
-    font-weight: 700;
-    text-decoration: none;
-    border-radius: 30px;
-    border: 2px solid var(--neon);
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    box-shadow: 0 0 30px rgba(0, 200, 255, 0.6);
-    backdrop-filter: blur(6px);
-    z-index: 5;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
 .projects-main-btn:hover {
     transform: translate(-50%, -50%) scale(1.05);
     box-shadow: 0 0 45px var(--neon);
@@ -609,6 +588,7 @@ html, body { overflow-x: hidden; }
         display: inline-block;
     }
 }
+
 
 
 
