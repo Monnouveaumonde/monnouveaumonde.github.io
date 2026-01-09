@@ -469,3 +469,13 @@ body {
         margin-left: 0;
     }
 }
+/* ✅ Base responsive */
+* { box-sizing: border-box; }
+img, video { max-width: 100%; height: auto; }
+
+.container { width: 100%; max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+
+/* ✅ Evite le scroll horizontal */
+html, body { overflow-x: hidden; }
+
+
