@@ -588,39 +588,6 @@ html, body { overflow-x: hidden; }
         display: inline-block;
     }
 }
-/* =========================
-   🔘 BOUTON CENTRAL PROJETS
-========================= */
-.projects-main-btn {
-    position: absolute !important;
-    top: 50% !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%) !important;
-
-    padding: 14px 36px !important;
-    background: rgba(5, 10, 25, 0.9) !important;
-    color: var(--neon) !important;
-
-    font-weight: 700 !important;
-    font-size: 0.9rem !important;
-    text-decoration: none !important;
-    text-transform: uppercase !important;
-    letter-spacing: 1.4px !important;
-
-    border-radius: 30px !important;
-    border: 2px solid var(--neon) !important;
-
-    box-shadow: 0 0 35px rgba(0, 200, 255, 0.7) !important;
-    backdrop-filter: blur(6px);
-
-    z-index: 10 !important;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.projects-main-btn:hover {
-    transform: translate(-50%, -50%) scale(1.08) !important;
-    box-shadow: 0 0 50px var(--neon) !important;
-}
 
 
 
